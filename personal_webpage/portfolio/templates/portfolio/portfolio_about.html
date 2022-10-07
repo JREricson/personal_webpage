@@ -1,0 +1,147 @@
+{% extends "portfolio/portfolio_base.html" %}
+{% load static %}
+
+
+
+{% block content %}
+
+<div id="name-header"  class="jumbotron bg-cover text-white">
+  <div id="header-name-container" class="container py-5 text-center">
+      <h1 class="display-1 font-weight-bold">John Ericson</h1>
+      <p class="font-italic display-4 mb-0">Software Engineer</p>
+
+
+      </p>
+      <a href="{% url 'portfolio:contact' %}" role="button" class="btn btn-primary px-5">Contact</a>
+      <a  href="{% static 'resume_website.pdf' %}" role="button" class="btn btn-primary px-5" target="_blank" rel="noopener noreferrer">Resume</a>
+  </div>
+</div>
+
+
+
+        <!-- ======= Resume Section ======= -->
+        <section id="resume" class="resume">
+          <div class="container">
+    
+     
+    
+            <div class="row">
+              <div class="col-lg-6" data-aos="fade-up">
+
+
+                <h3 class="resume-title">Interests</h3>
+                <div class="resume-item">
+                  <h4>Professional</h4>
+                  <p><em>Backend development, full stack development. </em></p>
+                  </div>
+                <div class="resume-item">
+                  <h4>Personal</h4>
+                  <p><em>Science, programming, rock climbing, history, photagraphy.</em></p>
+                  </div>
+            
+
+                <h3 class="resume-title">Languages</h3>
+                <div class="resume-item">
+                  <h4>Python</h4>
+                  <p><em> OOP, multi-processing/threading, exception handling, logging, virtual environments, basic scripting. Introductory exposure to Django, beautiful soup, symbolic calculations with sympy.</em></p>
+                  </div>
+                <div class="resume-item">
+                  <h4>Java</h4>
+                  <p><em> Generics, OOP, exception handling. Introductory exposure to Maven, Gradle, Android app development.</em></p>
+                  </div>
+                <div class="resume-item">
+                  <h4>JavaScript/Typescript/Node.js</h4>
+                  <p><em> Async calls, front end scripts, Express, Mongoose</em></p>
+                  </div> 
+                <div class="resume-item">
+                  <h4>C, C++, SQL</h4>
+                  <p><em>Exposure in academic coursework.</em></p>
+                  </div> 
+
+                  <h3 class="resume-title">Technologies and concepts</h3>
+                  <div class="resume-item">
+                    <h4>Databases</h4>
+                    <p><em>MongoDB (noSQL), Mongoose ODM, Postgress(SQL), Django ORM, Knex.js query builder.</em></p>
+                    </div>
+                  <div class="resume-item">
+                    <h4>Backend</h4>
+                    <p><em> REST APIs, web applications, deployment (Heroku). Introductory exposure to AWS S3.</em></p>
+                    </div>
+                  <div class="resume-item">
+                    <h4>Frontend</h4>
+                    <p><em> HTML, CSS, Bootstrap, dynamic scripts, templates, DOM manipulation, introductory React.</em></p>
+                    </div> 
+                  <div class="resume-item">
+                    <h4>Testing</h4>
+                    <p><em>Unit tests (pyTest, Junit), brief exposure to Selenium.</em></p>
+                    </div> 
+                  <div class="resume-item">
+                    <h4>Editors/IDEs</h4>
+                    <p><em>IntelliJ, Eclispe, Visual Studio, PyCharm, Jupyter notebooks.</em></p>
+                  </div> 
+                  <div class="resume-item">
+                    <h4>General</h4>
+                    <p><em>Git, Git flow, BASH/Linux basics, regex, UML class diagrams, Design patterns, Slack. Introductory exposure to Docker.</em></p>
+                  </div> 
+      
+
+
+
+
+       
+              </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+
+                <h3 class="resume-title">Education</h3>
+                <div class="resume-item">
+                  <h4>Oregon State and Santa Barbara City College</h4>
+                  <h5>Sept 2019 - June 2021</h5>
+  
+                  <ul>
+                    <li><strong>Coursework</strong>: Includes Data Structures, Algorithms, Android Programming, Design Patterns, Computer
+                    Architecture & Assembly Language, Databases, Discrete Math, Software Engineering, Programming
+                    Languages, Linear Algebra.</li>
+                    <li><strong>Activities</strong>: Involvement in competitive programming and computer science clubs.</li>
+                    <li><strong>Competitions</strong>: ICPC Southern CA regional 2019.</li>
+            
+                  </ul>
+                </div>
+                <div class="resume-item">
+                  <h4>Hamline University, BS Chemistry</h4>
+                  <h5>Sept 2007 - May 20111</h5>
+  
+                  <ul>
+                    <li><strong>GPA</strong>: 3.53 / Chemistry 3.65.</li>
+                    <li><strong>Awards</strong>: American Institute of Chemists Award, Beggs Scholarship, Carter Scholarship: for a “chemistry
+                    major with an outstanding record”, Mitsch Scholarship, Hamline Honor's Scholarship.</li>
+                    <li><strong>Activities</strong>: Elected to President and PR positions for school’s rock climbing club.</li>            
+               
+                  </ul>
+                </div>
+  
+
+                
+                <h3 class="resume-title">Selected Professional Experience</h3>
+                <div class="resume-item">
+                  <h4>Contract Backend Development Engineer</h4>
+                  <h5>Carterhaugh, Mar 2022 – June 2022</h5>
+                  
+                  <p><em>Development of internal tools and additions to code base shared between projects. Scraping and
+                    transforming data using external services. Typescript backend, React Frontend, Postgress SQL, Lerna
+                    versioning system.</p>
+                </div>
+                <div class="resume-item">
+                  <h4>Processing Chemist</em></h4>
+                  <h5>Nitto Denko Technical Corporation, May 2013 - Aug 2018</h5>
+                  <h6><em></em></h6>
+                  <p><em>Development of intellectual property for international team primarily focused on aqueous and gaseous
+                    filtration media and applications of graphene oxide, leading to several patents.</em></p>
+                  <p><em>Formulation and characterization of thin film nanocomposites, antimicrobial materials, and photocatalysts.</em></p>
+                  </div>
+              </div>
+            </div>
+    
+          </div>
+        </section><!-- End Resume Section -->
+{% endblock %}
